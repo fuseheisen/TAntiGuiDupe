@@ -1,0 +1,14 @@
+settings:
+  click-delay-ms: 50
+  drop-delay-ms: 100
+  recipe-delay-ms: 100
+  action-delay-ms: 50
+  protected-menus:
+    - "TPanel"
+    - "Menu"
+    - "Takas"
+    - "Market"
+
+messages:
+  reloaded: "§aTAntiGuiDupe başarıyla yenilendi."
+  no-permission: "§cBu komut için yetkiniz yok."

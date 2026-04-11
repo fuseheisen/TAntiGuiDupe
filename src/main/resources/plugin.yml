@@ -1,0 +1,10 @@
+name: TAntiGuiDupe
+version: 1.0.0
+main: com.turkeynw.tantiguidupe.TAntiGuiDupe
+api-version: '1.21'
+author: TurkeyNW
+depend: [packetevents]
+commands:
+  tagd:
+    description: TAntiGuiDupe command
+    permission: tantiguidupe.admin
