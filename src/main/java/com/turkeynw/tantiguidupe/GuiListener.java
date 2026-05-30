@@ -1,6 +1,5 @@
-package com.turkeynw.tantiguidupe.listeners;
+package com.turkeynw.tantiguidupe;
 
-import com.turkeynw.tantiguidupe.TAntiGuiDupe;
 import com.turkeynw.tantiguidupe.managers.ConfigManager;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

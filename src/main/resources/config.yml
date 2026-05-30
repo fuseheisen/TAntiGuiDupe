@@ -1,13 +1,29 @@
 settings:
+  # Normal tıklama gecikmesi (Milisaniye)
   click-delay-ms: 50
   drop-delay-ms: 100
   recipe-delay-ms: 100
   action-delay-ms: 50
+
+  # Korumaya alınacak menü başlıkları
   protected-menus:
     - "TPanel"
     - "Menu"
     - "Takas"
     - "Market"
+
+  # --- GELİŞMİŞ HİLE KORUMASI AYARLARI ---
+  advanced:
+    # DesyncManager: Envanteri zorla güncelleme (forceSync) döngü süresi (Tick cinsinden, 20 Tick = 1 Saniye)
+    sync-timer-ticks: 10
+
+    # PacketManager: Kısa süre içinde gelen aşırı paket (Burst) sınırı
+    burst-time-window-ms: 100
+    burst-packet-limit: 25
+
+    # PacketManager: Sunucuya paket göndermeyi kesme (Freeze/Desync) cezası süresi
+    freeze-time-limit-ms: 2500
+    freeze-penalty-ms: 1000
 
 messages:
   reloaded: "§aTAntiGuiDupe başarıyla yenilendi."

@@ -32,6 +32,9 @@ public class DesyncManager {
     //by
     //fuseheisen
     private void startPeriodicSync() {
+        //
+        long ticks = plugin.getConfigManager().getSyncTimerTicks();
+
         syncTask = Bukkit.getScheduler().runTaskTimer(plugin, () -> {
             for (UUID uuid : plugin.getPacketManager().getOpenMenus()) {
                 Player player = Bukkit.getPlayer(uuid);
@@ -39,7 +42,7 @@ public class DesyncManager {
                     player.updateInventory();
                 }
             }
-        }, 10L, 10L); // 10 Tick = 0.5 Saniye
+        }, ticks, ticks); //
     }
 
     public void stop() {

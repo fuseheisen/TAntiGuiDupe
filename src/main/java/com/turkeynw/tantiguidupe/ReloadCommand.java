@@ -1,6 +1,5 @@
-package com.turkeynw.tantiguidupe.commands;
+package com.turkeynw.tantiguidupe;
 
-import com.turkeynw.tantiguidupe.TAntiGuiDupe;
 import com.turkeynw.tantiguidupe.managers.ConfigManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

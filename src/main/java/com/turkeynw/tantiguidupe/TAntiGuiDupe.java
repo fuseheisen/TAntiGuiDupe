@@ -1,7 +1,5 @@
 package com.turkeynw.tantiguidupe;
 
-import com.turkeynw.tantiguidupe.commands.ReloadCommand;
-import com.turkeynw.tantiguidupe.listeners.GuiListener;
 import com.turkeynw.tantiguidupe.managers.ConfigManager;
 import com.turkeynw.tantiguidupe.managers.DesyncManager;
 import com.turkeynw.tantiguidupe.managers.PacketManager;
@@ -33,6 +31,11 @@ public final class TAntiGuiDupe extends JavaPlugin {
         }
 
         getServer().getConsoleSender().sendMessage("§6[TAntiGuiDupe] §cEklenti devre dışı bırakıldı.");
+    }
+
+    //fuseheisen
+    public ConfigManager getConfigManager() {
+        return configManager;
     }
 
     public PacketManager getPacketManager() {
